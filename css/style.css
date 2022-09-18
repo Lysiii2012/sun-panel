@@ -1,0 +1,361 @@
+body *{
+
+}
+.nav-menu{
+    background: #35d06e;
+}
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+@media screen and (min-width: 1200px){
+    .nav-menu .navbar-nav::before{
+        content:"";
+        width: 0;
+        left: 0;
+        display: block;
+        border-top: 72px solid #35d06e; 
+        border-right: 46px solid transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav-menu .navbar-nav::after{
+        content:"";
+        width: 0;
+        display: block;
+        border-bottom: 72px solid #35d06e; 
+        border-left: 40px solid transparent;
+        position: absolute;
+        top: 0;
+        right: -1px;
+    }
+}
+.btn-cash::after{
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    background:url(../img/cash.png);
+}
+.carusel_container{
+    overflow: hidden;
+}
+.carusel_content{
+    top: 174px;
+    left: auto;
+    z-index: 10;
+    color:white;
+}
+.part{
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #35d06e;
+}
+.part::before{
+    content: "";
+    display: block;
+    top: 48px;
+    left: -1px;
+    width: 55px;
+    height: 2px;
+    background:white;
+    position: absolute;
+}
+.carousel-indicators .active{
+    background-color:#35d06e; 
+}
+h1{
+    font-family: 'Roboto Slab';
+    font-size: 48px;
+}
+h1 span{
+    font-size: 36px;
+    font-weight: 300;
+}
+.btn{
+    background:#35d06e; 
+    color:white;
+    text-decoration: none;
+}
+.container_calc{
+    background-color: #f2f7f8;
+}
+.container_calc p,
+.container-product p,
+.advantage p,
+.last-news>p{
+    font-family: Raleway;
+    font-weight: 400;
+    color: #35d06e;
+}
+.date-calc p,
+.card-body span{
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #a6aeb7;
+}
+.container_calc .form-control{
+    width: 109px;
+    height: 36px;
+    border: 1px solid #35d06e;
+}
+.form-label{
+    text-align: left;
+}
+h2{
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 700;
+    color: #232323;
+    position: relative;
+}
+h2::after{
+    content:"";
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 2px;
+    background-color: #35d06e;
+}
+.calc_date_content>div>span{
+    font-family: 'Open Sans';
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #35d06e;
+    margin: 0 0 10px;
+    display: inline-block;
+}
+.calc_date_content>div>p>span{
+    color: #35d06e;
+}
+.arrow{
+    position: relative;
+    top: 523px;
+    left: calc(50% - 42px);
+    z-index: 10;
+    width: 84px;
+    height: 84px;
+    background-color: #35d06e;
+    background-image: linear-gradient(0.0deg, #35cf6f 0%, #2ab7a5 100%);
+    border:6px solid #ffffff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+    transform: rotate(90deg);
+}
+
+.arrow:after{
+    content:"";
+    display: block;
+    background:white;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 44px;
+    right: 18px;
+    transform: rotate(-45deg);
+}
+.arrow::before{
+    content:"";
+    display: block;
+    background:white;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 23px;
+    right: 19px;
+    transform: rotate(45deg);
+}
+@media screen and (min-width:445px) {
+    .arrow{
+        top: 485px; 
+    }
+}
+@media screen and (min-width:768px) {
+    .arrow{
+        top: 445px; 
+    }
+}
+@media screen and (min-width:992px) {
+    .input_date{
+        top: 0;
+        left: -15px;
+    }
+    .calc_date{
+        top: 0;
+        right: -15px;
+    }
+    .arrow{
+        top: 281px;
+        transform: rotate(0deg); 
+    }
+}
+.input_date,
+.calc_date{
+    margin: 0 auto;
+}
+.container .info{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #a6aeb7;
+}
+.consultation{
+    background-color: #35d06e;
+    border-radius: 0;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+}
+.container-product h3, h4{
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #232323;
+    position: relative;
+}
+.container-product h3::before,
+h4::before{
+    content:"";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: calc(50% - 15px);
+    width: 30px;
+    height: 2px;
+    background-color: #35d06e;
+}
+.card-text,
+.advantage_gallary p{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #91969c;
+}
+.product_card .card::before{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 180px);
+    width: 360px;
+    height: 320px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+.card{
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.apartament{
+    background-color: #37454c;
+    padding-top: 85px;
+}
+.apartament p{
+    font-family: 'Open Sans';
+    font-size: 15px;
+}
+.apartament{
+    overflow: hidden;
+}
+.last_proect{
+    background:linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), no-repeat url(../img/solar_and_wind_energy.png);
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 710px;
+    position: relative;
+}
+.news-card>.card{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+.card-link{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #35d06e;
+}
+.news-card h4::before{
+    left: 0;
+}
+.container-form{
+    background-color: #85daa4;  
+}
+.container-form .container{
+    background: no-repeat url(../img/sun_bat.png);
+    background-position:center right;
+}
+.form_come h2::after{
+    left: 0;
+}
+.form_come .form-control{
+    border: 1px solid #ffffff;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    font-family: 'Open Sans';
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #91969c;
+}
+footer{
+    background:no-repeat url(../img/footer.png);
+    background-size:cover;
+}
+
+.navbar-nav-footer a, 
+.about_logo p{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 300;
+    color: #a6aeb7;
+}
+h5{
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+    line-height: 24px;
+}
+.footer-contact li,
+.footer-subs p{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    list-style-type: none;
+}
+footer>.container>div::before,
+.navbar-nav-footer::before,
+.navbar-nav-footer::after{
+    content:"";
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #35d06e;
+}
+.navbar-nav-footer::before{
+    left: calc(50% - 15px);
+    top: -10px;
+}
+.navbar-nav-footer::after{
+    left: calc(50% - 15px);
+    top: 45px;
+}
+footer>p{
+    color: #91969c;
+}
