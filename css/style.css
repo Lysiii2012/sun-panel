@@ -44,6 +44,9 @@ body *{
 }
 .carusel_container{
     overflow: hidden;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .carusel_content{
     top: 174px;
